@@ -1,0 +1,43 @@
+.button {
+  background-color: #666;
+  border: 1px solid #666;
+  border-radius: 2px;
+  color: #eee;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Lato, helvetica, arial, sans-serif;
+  font-size: 2rem;
+  margin: 0;
+  max-height: 60px;
+  max-width: 128px;
+  overflow: hidden;
+  padding: 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: background-color 500ms ease, color 500ms ease;
+  white-space: nowrap;
+  width: 50%;
+
+  &:hover {
+    background-color: #333;
+    color: #eee;
+  }
+
+  &--inverted {
+    background-color: #eee;
+    color: #666;
+  }
+
+  &--inverted:hover {
+    background-color: #ccc;
+    color: #333;
+  }
+
+  &--disabled,
+  &--disabled:hover {
+    background-color: #eee;
+    border-color: #eee;
+    color: #999;
+  }
+}
