@@ -74,3 +74,39 @@ html {
   .heading--2 {
     margin-bottom: 20px;
     font-family: 'Roboto Slab', serif; }
+
+.profile {
+  max-width: 100px;
+  height: auto;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 150%;
+  margin: 0 0 0 -20%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%; }
+
+.header {
+  align-items: center;
+  margin: 0 auto 20px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  padding: 2em;
+  width: 100%;
+  min-height: 500px;
+  background: transparent url(bg.jpg) no-repeat 25% 20%;
+  background-size: unset; }
+
+/* eftir að miðja texta, skipta um font, laga bil á milli stafa*/
+.header__title {
+  font-size: 4rem;
+  color: #ffffff;
+  word-wrap: break-word;
+  margin-top: 100px;
+  line-height: 1.3; }
