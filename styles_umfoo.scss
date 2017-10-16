@@ -1,0 +1,68 @@
+
+$max-width: 400px;
+$gutter: 20px;
+
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Opens sans', sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+/* todo: skipta um font, fíntstilla linehight*/
+body {
+
+  line-height: 1.5;
+
+}
+/* todo: vantar universal top menu og footer */
+main {
+  max-width: $max-width;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.header__umfoo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  padding: 2em;
+  width: 100%;
+  min-height: 500px;
+  background: transparent url(bg-subpage.jpg) no-repeat 0% 50%;;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+/* eftir að miðja texta, skipta um font, laga bil á milli stafa*/
+.header__umfoo__title {
+  font-size: 3.5rem;
+  color: #ffffff;
+  word-wrap: break-word;
+  margin-top: 100px;
+  line-height: 1.3;
+}
+
+.content__umfoo__quotetext {
+  font-size: 1.5rem;
+  font-style: italic;
+  float: right;
+  display: inline-block;
+}
+
+figure img {
+  float: right;
+  margin: 2em 0 2em 2em;
+}
+
+@import "scss/grid";
+@import "scss/button";
+@import "scss/heading";
+@import "scss/profile";
+@import "scss/header";
