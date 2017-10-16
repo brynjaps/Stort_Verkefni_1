@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="is">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kaupa</title>
+    <!-- <link rel="stylesheet" href="grid.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <section>
+        <p class="heading--2">Persónuupplýsingar</p>
+          <div class="division">
+            <div>Nafn:</div>
+            <input type="text" name="nafn">
+          </div>
+          <div class="division">
+            <div>Kennitala:</div>
+            <input type="text" name="kennitala" placeholder="123456-7890">
+          </div>
+          <div class="division">
+            <div>Kyn:</div>
+            <input type="radio" name="kyn" value="kona">Kona
+            <input type="radio" name="kyn" value="karl">Karl
+            <input type="radio" name="kyn" value="annað">Annað
+          </div>
+          <div class="division">
+            <div>Sími:</div>
+            <input type="tel" name="simi" placeholder="+354 812 3456">
+          </div>
+          <div class="division">
+            <div>Heimilisfang:</div>
+            <input type="text" name="heimilisfang">
+          </div>
+          <div class="division">
+            <input type="checkbox" checked>Skrá mig á póstlista
+          </div>
+      </section>
+      <section>
+        <p class="heading--2">Greiðsluupplýsingar</p>
+        <div class="division">
+          <div>Greiða með:</div>
+          <select name="greiðsla">
+            <option value="kreditkorti">Kreditkorti</option>
+            <option value="millifaerslu">Millifærslu</option>
+            <option value="reidufe">Reiðufé</option>
+          </select>
+        </div>
+        <div class="division">
+          <div>Nafn á korti:</div>
+          <input type="text" name="nafnakorti">
+        </div>
+        <div class="division">
+          <div>Kortanúmer</div>
+          <input type="text" name="kortanumer" placeholder="5999-9999-9999-9999">
+        </div>
+        <div class="division">
+          <div>Gildistími</div>
+          <label>Mán</label>
+          <select name="man">
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <label>Ár</label>
+          <select name="man">
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+          </select>
+        </div>
+      </section>
+      <button class="button">Panta</button>
+    </main>
+  </body>
+</html>
