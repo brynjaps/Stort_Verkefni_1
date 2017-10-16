@@ -102,11 +102,3 @@ html {
   min-height: 500px;
   background: transparent url(bg.jpg) no-repeat 25% 20%;
   background-size: unset; }
-
-/* eftir að miðja texta, skipta um font, laga bil á milli stafa*/
-.header__title {
-  font-size: 4rem;
-  color: #ffffff;
-  word-wrap: break-word;
-  margin-top: 100px;
-  line-height: 1.3; }
