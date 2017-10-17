@@ -4,10 +4,12 @@ $gutter: 20px;
 
 /* setjum box-sizing: border-box; á allt */
 html { /* stylelint-disable-line */
+
   box-sizing: border-box;
 }
 
 *, *:before, *:after { /* stylelint-disable-line */
+
   box-sizing: inherit;
 
   /* fjarlægjum margin og padding */
@@ -20,16 +22,12 @@ html { /* stylelint-disable-line */
   margin-right: $gutter;
   margin-left: $gutter;
   margin-top: $gutter;
-
   font-family: 'Opens sans', sans-serif;
   font-size: 16px;
-}
-
-.division{
-  margin-bottom: 10px;
-  margin-top: 10px;
+  max-width: $max-width;
 }
 
 @import "scss/grid";
 @import "scss/button";
 @import "scss/heading";
+@import "scss/kaupa";
