@@ -1,16 +1,11 @@
 .profile {
-max-width: 100px;
-height: auto;
-overflow: hidden;
-
-    display: block;
-  margin: 0 auto;
-  height: auto;
-   width: 150%; 
-  margin: 0 0 0 -20%;
--webkit-border-radius: 50%;
--moz-border-radius: 50%;
--ms-border-radius: 50%;
--o-border-radius: 50%;
-border-radius: 50%;  
+  width: 360px;
+  height: 360px;
+  overflow: hidden;
+  display: flex;
+  margin: 20px;
+  border-radius: 50%;
+  &__img {
+    margin-left: -20px;
+  }
 }
