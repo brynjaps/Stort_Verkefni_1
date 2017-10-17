@@ -11,11 +11,15 @@ html {
   padding: 0;
   margin: 0; }
 
+main {
+  max-width: 1200px;
+  margin: 0 auto; }
+
 html {
   /* stylelint-disable-line */
   margin-right: 20px;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 0;
   font-family: 'Opens sans', sans-serif;
   font-size: 16px;
   max-width: 1200px; }
@@ -94,6 +98,103 @@ html {
     margin-bottom: 20px;
     font-family: 'Roboto Slab', serif;
     font-size: 24px; }
+
+.profile {
+  width: 360px;
+  height: 360px;
+  overflow: hidden;
+  display: flex;
+  margin: 20px;
+  border-radius: 50%; }
+  .profile__img {
+    margin-left: -20px; }
+
+.header__top {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  opacity: 0.8;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed; }
+
+.header__right {
+  display: flex;
+  flex-direction: row; }
+
+.header__left {
+  width: 100%;
+  display: flex; }
+
+.header__text {
+  color: white;
+  padding: 5px;
+  align-self: center;
+  text-decoration: none; }
+
+.button__header__text {
+  color: white;
+  text-decoration: none; }
+
+.button__header {
+  background-color: #666;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px; }
+  @media (max-width: 400px) {
+    .button__header {
+      display: none; } }
+
+header {
+  max-width: 1200px; }
+
+.footer {
+  max-width: 1200px;
+  width: 100%;
+  background: #333; }
+
+.footer__row {
+  display: flex;
+  flex-direction: row;
+  border-bottom-color: #666;
+  border-bottom-style: solid; }
+
+.footer__down {
+  display: flex;
+  flex-direction: row; }
+
+.footer__top {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  padding-top: 20px; }
+  .footer__top__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  @media (max-width: 400px) {
+    .footer__top {
+      width: 50%; } }
+
+.footer__hide {
+  width: 25%; }
+  @media (max-width: 400px) {
+    .footer__hide {
+      display: none; } }
+
+.footer__bottom {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 20px; }
+
+.footer__text {
+  color: white; }
+
+.footer__bottom__text {
+  color: #666; }
 
 .division {
   margin-bottom: 20px;
