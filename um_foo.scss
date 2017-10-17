@@ -54,21 +54,20 @@ main {
 }
 
 .um_foo__content__quote {
-  display: inline-block;
-  float: right;
+  display: block;
   margin: $gutter;
 }
 
 .um_foo__content__quotetext {
-  display: inline-block;
-  float: right;
+  display: block;
   margin-top: $gutter;
   font-size: 1.6rem;
   font-style: italic;
+  float: none;
 }
 
 .content__quotetextauthor {
-  display: inline-block;
+  display: block;
   padding: 20px;
 }
 
@@ -79,27 +78,37 @@ main {
 }
 
 .um_foo__content__textauthor {
-  display: inline-block;
+  display: block;
   margin-top: $gutter;
   font-size: 1.2rem;
 }
 
 .um_foo__content__text {
-  display: inline-block;
+  display: block;
   margin-top: $gutter;
   font-size: 1.2rem;
 }
 
 .um_foo__content__textspecial {
-  display: inline-block;
+  display: block;
   margin-top: $gutter;
   font-size: 1.2rem;
 }
+
+
 
 @media (min-width: 400px) {
   main {
     max-width: 400px;
     margin: 0 auto;
+  }
+
+  .um_foo__content__textspecial {
+    display: inline-block;
+  }
+
+  .um_foo__content__quote {
+    float: none;
   }
 }
 
@@ -110,11 +119,20 @@ main {
   }
 
   .um_foo__content__quote {
+    float: right;
     margin-top: $gutter;
+    width: 40%;
   }
 
+  .um_foo__content__textspecial {
+    display: block;
+    margin-top: $gutter;
+    font-size: 1.2rem;
+  }
 
-
+  .um_foo__content__quotetext {
+    float: right;
+  }
 
 }
 
@@ -126,7 +144,12 @@ main {
 
   .um_foo__content__quote {
     width: 44%;
-    margin-top: 60px;
+    margin-top: 20px;
+    float: right;
+  }
+
+  .um_foo__content__quotetext {
+    float: right;
   }
 
   .um_foo__content__textspecial {
