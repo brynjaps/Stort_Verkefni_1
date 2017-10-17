@@ -1,0 +1,140 @@
+
+$max-width: 400px;
+$gutter: 20px;
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,*:before,*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+/* todo: skipta um font, fíntstilla linehight */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* todo: vantar universal top menu og footer */
+main {
+  max-width: $max-width;
+  margin: 0 auto 40px;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+.um_foo__content {
+  margin: 0 $gutter 0 $gutter;
+}
+
+.um_foo__header {
+  display: flex;
+  width: 100%;
+  min-height: 470px;
+  padding: 2em;
+  margin-bottom: 2em;
+  flex-direction: column;
+  background: transparent url("bg-subpage.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+/* eftir að miðja texta, skipta um font, laga bil á milli stafa */
+.um_foo__header__title {
+  margin-top: 60px;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.3;
+  color: #fff;
+  word-wrap: break-word;
+}
+
+.um_foo__content__quote {
+  display: inline-block;
+  float: right;
+  margin: $gutter;
+}
+
+.um_foo__content__quotetext {
+  display: inline-block;
+  float: right;
+  margin-top: $gutter;
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.content__quotetextauthor {
+  display: inline-block;
+  padding: 20px;
+}
+
+.um_foo__content__title {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.um_foo__content__textauthor {
+  display: inline-block;
+  margin-top: $gutter;
+  font-size: 1.2rem;
+}
+
+.um_foo__content__text {
+  display: inline-block;
+  margin-top: $gutter;
+  font-size: 1.2rem;
+}
+
+.um_foo__content__textspecial {
+  display: inline-block;
+  margin-top: $gutter;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 400px) {
+  main {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 600px) {
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .um_foo__content__quote {
+    margin-top: $gutter;
+  }
+
+
+
+
+}
+
+@media (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .um_foo__content__quote {
+    width: 44%;
+    margin-top: 60px;
+  }
+
+  .um_foo__content__textspecial {
+    width: 50%;
+    font-size: 1.2rem;
+  }
+
+  .um_foo__header__title {
+    line-height: 5;
+  }
+}
