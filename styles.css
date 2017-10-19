@@ -1,61 +1,87 @@
 @charset "UTF-8";
-/* setjum box-sizing: border-box; á allt */
+
 html {
   /* stylelint-disable-line */
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 *, *:before, *:after {
-  /* stylelint-disable-line */
+
   box-sizing: inherit;
-  /* fjarlægjum margin og padding */
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 main {
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 html {
-  /* stylelint-disable-line */
+  max-width: 1200px;
   margin: 0 auto;
-  font-family: 'Opens sans', sans-serif;
+  font-family: "Opens sans", sans-serif;
   font-size: 16px;
-  max-width: 1200px; }
+}
 
 .row {
   display: flex;
   flex-wrap: wrap;
   margin-right: -10px;
   margin-bottom: 20px;
-  margin-left: -10px; }
+  margin-left: -10px;
+}
 
 .col {
   padding-right: 10px;
-  padding-left: 10px; }
-  .col-12 {
-    width: 100%; }
-  .col-8 {
-    width: 66.66667%; }
-  .col-6 {
-    width: 50%; }
-  .col-4 {
-    width: 33.33333%; }
-  .col-3 {
-    width: 25%; }
-  .col-2 {
-    width: 25%; }
-  @media (max-width: 599px) {
-    .col-sm-12 {
-      width: 100%; }
-    .col-sm-6 {
-      width: 50%; } }
-  @media (min-width: 1200px) {
-    .col-sm-4 {
-      width: 33.33333%; } }
-  @media (max-width: 600px) {
-    .col-sa-12 {
-      width: 100%; } }
-  @media (max-width: 600px) {
+  padding-left: 10px;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-3 {
+  width: 25%;
+}
+.col-2 {
+    width: 25%;
+}
+
+@media (max-width: 599px) {
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  .col-sm-6 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-sm-4 {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 600px) {
+  .col-sa-12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
     .col-600-12 {
       width: 100%; }
     .col-600-6 {
