@@ -1,0 +1,113 @@
+$gutter: 20px;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: $gutter;
+  margin-left: -($gutter / 2);
+  margin-right: -($gutter / 2);
+}
+
+@mixin columns($col: 1) {
+  width: ($col / 12 * 100) * 1%;
+}
+
+.col {
+  padding-left: $gutter / 2;
+  padding-right: $gutter / 2;
+
+  &-12 {
+    @include columns(12);
+  }
+
+  &-8 {
+    @include columns(8);
+  }
+
+  &-6 {
+    @include columns(6);
+  }
+
+  &-4 {
+    @include columns(4);
+  }
+
+  &-3 {
+    @include columns(3);
+  }
+
+  &-2 {
+    @include columns(3);
+  }
+
+  &-sm {
+    @media (max-width: 599px) {
+      &-12 {
+        @include columns(12);
+      }
+
+      &-6 {
+        @include columns(6);
+      }
+    }
+    @media (min-width: 1200px) {
+      &-4 {
+        @include columns(4);
+      }
+    }
+  }
+
+  &-sa {
+    @media (max-width: 600px) {
+      &-12 {
+        @include columns(12);
+      }
+    }
+  }
+
+  &-600 {
+    @media (max-width: 600px) {
+      &-12 {
+        @include columns(12);
+      }
+
+      &-6 {
+        @include columns(6);
+      }
+
+      &-3 {
+        @include columns(3);
+      }
+    }
+  }
+
+  &-400 {
+    @media (max-width: 400px) {
+      &-12 {
+        @include columns(12);
+      }
+
+      &-6 {
+        @include columns(6);
+      }
+
+      &-3 {
+        @include columns(3);
+      }
+    }
+  }
+}
+
+.offset {
+  &-2 {
+    margin-left: (2 / 12 * 100) * 1%;
+  }
+
+  &-sm {
+    @media (max-width: 599px) {
+      &-0 {
+        margin-left: 0;
+      }
+    }
+  }
+}
