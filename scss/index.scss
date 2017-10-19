@@ -57,7 +57,8 @@ img {
     }
     &__duration {
       font-size: 14px;
-      font-weight: lighter;
+      font-weight: bold;
+      color: #666;
     }
   }
   &__text {
@@ -86,6 +87,7 @@ img {
   margin: 5px;
   border: none;
   border-radius: 2px;
+  cursor: pointer;
   &__text {
     color: white;
     text-decoration: none;
