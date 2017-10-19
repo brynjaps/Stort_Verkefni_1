@@ -22,6 +22,9 @@ Myndir eru í aðalmöppunni.
 Að verkefninu komu:
 
 Bjartur Guðmundsson,	bjg38@hi.is
-Brynja Pálína Sigurgeirsdóttir, bps5@hi.is
+
+Brynja Pálína Sigurgeirsdóttir, bps5@hi.is 
+
 Guðrún Stella Ágústsdóttir, gsa15@hi.is
+
 Róbert Blanco, rob4@hi.is
