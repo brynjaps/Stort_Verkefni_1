@@ -149,7 +149,7 @@ html {
   width: 100%;
   display: flex;
   flex-direction: row;
-  opacity: 0.8;
+  opacity: .8;
   background: rgba(0, 0, 0, 0.9);
   position: fixed;
   height: 45px; }
@@ -316,14 +316,6 @@ header {
   .greidsla {
     margin-right: 90px; } }
 
-@media (min-width: 600px) {
-  main {
-    margin-top: 100px; } }
-
-@media (min-width: 400px) {
-  main {
-    margin-top: 50px; } }
-
 .kyn {
   vertical-align: middle; }
 
@@ -352,6 +344,23 @@ input[type="radio"] {
 .kaupa__button {
   display: flex;
   margin: 60px 0px 60px; }
+
+.kaupa__header {
+  display: flex;
+  width: 100%;
+  min-height: 400px;
+  padding: 2em;
+  margin-bottom: 2em;
+  flex-direction: column;
+  background: transparent url("bg-subpage.jpg") no-repeat 50% 50%;
+  background-size: cover; }
+  .kaupa__header__text {
+    margin-top: 100px;
+    margin-left: -30px; }
+  .kaupa__header__title {
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 60px; }
 
 body {
   max-width: 1200px;
@@ -445,6 +454,8 @@ img {
     color: white;
     text-decoration: none;
     font-size: 36px; }
+<<<<<<< HEAD
+=======
 
 /* UMFOO */
 
@@ -506,3 +517,4 @@ img {
     margin: 40px;
   }
 }
+>>>>>>> 01cb9b75c4691758e87c7d896fcd7a2ae1a1c806
