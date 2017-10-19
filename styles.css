@@ -17,9 +17,7 @@ main {
 
 html {
   /* stylelint-disable-line */
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-top: 0;
+  margin: 0 auto;
   font-family: 'Opens sans', sans-serif;
   font-size: 16px;
   max-width: 1200px; }
@@ -339,7 +337,11 @@ input[type="radio"] {
     font-size: 60px; }
 
 body {
-  font-family: "Open Sans", sans-serif; }
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5; }
 
 .row__row {
   display: flex;
@@ -426,3 +428,67 @@ img {
     color: white;
     text-decoration: none;
     font-size: 36px; }
+<<<<<<< HEAD
+=======
+
+/* UMFOO */
+
+
+.um_foo__header {
+  display: flex;
+  width: 100%;
+  min-height: 470px;
+  padding: 2em;
+  margin-bottom: 2em;
+  flex-direction: column;
+  background: transparent url("bg-subpage.jpg") no-repeat 0% 0%;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.um_foo__header__title {
+  margin: auto 20px auto 20px;
+  align-items: center;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+  word-wrap: break-word;
+}
+
+.um_foo__content {
+  margin: 40px 20px;
+}
+
+.um_foo__content p {
+  margin: 20px 0;
+}
+
+.um_foo__content__title {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.um_foo__content__quote {
+  padding-left: 10px;
+}
+
+.um_foo__content__quotetext {
+  margin: 0;
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+@media (min-width: 600px) {
+  .um_foo__header {
+    background-position: 50% 70%;
+  }
+
+  .um_foo__content__quote {
+    float: right;
+    width: 50%;
+    margin: 40px;
+  }
+}
+>>>>>>> 01cb9b75c4691758e87c7d896fcd7a2ae1a1c806
