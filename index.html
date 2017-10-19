@@ -1,102 +1,176 @@
-<!doctype html>
-<html lang="is">
- <head>
+<!DOCTYPE html>
+<html class="grid" lang="is">
+  <head>
     <meta charset="utf-8">
-    <title>Stort Verkefni</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i%7CRoboto+Slab:400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="grid.css">
   </head>
   <body>
-    <header class="header">
-      <div class="grid">
-        <div class="row">
-          <div class="col col-12">
-            <h2>Í fyrsta skipti á Íslandi</h2><br>
-           <h1 class="headin heading--one">Fooþjónustan</h1><br>
-           <button class="button">Kaupa</button>
+    <main>
+      <header>
+        <div class="header__top">
+          <div class="header__left">
+            <a href="index.html" class="header__text">
+              <h2 class="heading__2">Fooþjónustan</h2>
+            </a>
+          </div>
+          <div class="header__right">
+            <a href="um-foo.html" class="header__text">Um</a>
+            <a href="kaupa.html">
+              <button class="button__header">
+                <p class="button__header__text">Kaupa</p>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="index__header">
+          <div class="index__header__text">
+            <h2 class="index__header__title">Í fyrsta skipti á Íslandi</h2>
+          </div>
+          <div class="index__header__text">
+            <h1 class="index__header__name">Fooþjónustan</h1>
+          </div>
+          <div class="index__header__button">
+            <a href="kaupa.html">
+              <button class="button__header__later">
+                <p class="button__header__later__text">Kaupa</p>
+              </button>
+            </a>
+          </div>
+        </div>
+      </header>
+      <div class="row">
+        <div class="col col-6 col-sa-12">
+          <div class="row__row">
+            <div class="row__row__check">
+              <img class="check__image" alt="" src="check.svg">
+            </div>
+            <div class="row__row__text">
+              <h2 class="heading__2">Ódýr og góð þjónusta</h2>
+              <p class="text__check">Gerir nákvæmlega það sem þú býst við. Ekki láta þessa frábæru nýjung framhjá þér fara.</p>
+            </div>
+          </div>
+
+          <div class="row__row">
+            <div class="row__row__check">
+              <img class="check__image" alt="" src="check.svg">
+            </div>
+            <div class="row__row__text">
+              <h2 class="heading__2">Þægilegt í amstri dagsins</h2>
+              <p class="text__check">Eftir nokkra daga munt þú aldrei geta verið án Fooþjónustunnar.</p>
+            </div>
+          </div>
+
+          <div class="row__row">
+            <div class="row__row__check">
+              <img class="check__image" alt="" src="check.svg">
+            </div>
+            <div class="row__row__text">
+              <h2 class="heading__2">Nauðsynlegt á hvert heimili</h2>
+              <p class="text__check">Hvort sem er fyrir einstaklinga eða stórfjölskyldur.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-6 col-sa-12">
+          <div class="row__image">
+            <img alt="" src="image.jpg">
           </div>
         </div>
       </div>
-      </header>
-      <main>
-      <form>
-        <div class="row">
-          <div class="col col-8 col-sm12">
-            <label>
-              <input type="checkbox" name="continue" checked>
-              <h3 class="heading heading--three">Ódýr og góð þjónusta</h3>
-              <p class="text">Gerir nákvæmlega það sem þú býst við.
-              Ekki láta þessa frábæru nýjung framhjá þér fara.</p>
-            </label>
+
+      <div class="row__img">
+        <div class="column col-6 col-sm-4 col-sm-12">
+          <div class="row__profile">
+            <img alt="" src="profile1.jpg" class="profile__image">
           </div>
-         </div>
-
-
-         <div class="row">
-           <div class="col col-4 col-sm-12">
-            <label>
-              <input type="checkbox" name="continue" checked>
-              <h3 class="heading heading--three">Þægilegt í amstri dagsins</h3>
-              <p>Eftir nokkra daga munt þú aldrei geta verið án Fooþjónustunnar.</p>
-            </label>
+          <div class="profile__text">
+            <div class="profile__review">
+              <p class="profile__review__text">„Ég get engan vegið hugsað mér lífið án þessarar þjónustu!“</p>
+            </div>
+            <div class="profile__about">
+              <p class="profile__about__name">Anna Jóns</p>
+              <p class="profile__about__duration">Áskrifandi í þrjá mánuði</p>
+            </div>
           </div>
         </div>
 
-          <div>
-            <label>
-              <input type="checkbox" name="continue" checked>
-              <h3 class="heading heading--three">Nauðsynlegt á hvert heimili</h3>
-              <p class="text">Hvort sem er fyrir einstaklinga eða stórfjölskyldur</p>
-            </label>
+        <div class="column col-6 col-sm-4 col-sm-12">
+          <div class="row__profile">
+            <img alt="" src="profile2.jpg" class="profile__image">
           </div>
-
-        <div class="row">
-              <div class="img"><img src="image.jpg" alt=""></div>
-          </div>
-
-        <div class="row">
-          <div class="col col-4 col-sm-12">
-              <div class="profile"><img src="profile1.jpg" alt="" class="profile__img"></div>
+          <div class="profile__text">
+            <div class="profile__review">
+              <p class="profile__review__text">„Vá, þetta breytir öllu!“</p>
+            </div>
+            <div class="profile__about">
+              <p class="profile__about__name">Siggi Páls</p>
+              <p class="profile__about__duration">Áskrifandi í tvo daga</p>
+            </div>
           </div>
         </div>
-              <p class="text">„Ég get engan vegið hugsað mér lífið án
-              þessarar þjónustu!“
-              Anna Jóns
-              Áskrifandi í þrjá
-               mánuði</p>
 
-        <div class="row">
-          <div class="col col-4 col-sm-12">
-              <div class="profile"><img src="profile2.jpg" alt="" class="profile__img"></div>
+        <div class="column col-6 col-sm-4 col-sm-12">
+          <div class="row__profile">
+            <img alt="" src="profile3.jpg" class="profile__image">
+          </div>
+          <div class="profile__text">
+            <div class="profile__review">
+              <p class="profile__review__text">„A+++, mun aldrei hætta í áskrift“</p>
+            </div>
+            <div class="profile__about">
+              <p class="profile__about__name">Jón Guðrúnarson</p>
+              <p class="profile__about__duration">Áskrifandi í ár</p>
+            </div>
           </div>
         </div>
-              <p class="text">„Vá, þetta breytir öllu!“
-              Siggi Páls
-             Áskrifandi í tvo daga</p>
+      </div>
 
-         <div class="row">
-           <div class="col col-4 col-sm-12">
-              <div class="profile"><img src="profile3.jpg" alt="" class="profile__img"></div>
-           </div>
-         </div>
-            <p class="text">„A+++, mun aldrei hætta í áskrift“
-              Jón Guðrúnarson
-              Áskrifandi í ár
-            </p>
-
-           <p>Eftir hverju ert þú að bíða?</p>
-         <button class="button">Kaupa</button>
+      <div class="column">
+        <div class="column__text">
+          <h3 class="heading__2">Eftir hverju ert þú að bíða?</h3>
+        </div>
+        <div class="column__button">
+          <a href="kaupa.html">
+            <button class="button__column">
+              <p class="button__column__text">Kaupa</p>
+            </button>
+          </a>
+        </div>
+      </div>
+      <footer>
         <div class="footer">
-          Kaupa
-          Fooþjónustan
-          123-4567
-         Opið 12-13 alla daga
-         Bargata 1
-         900 Foobar
-         © Fooþjónustan 2017
+          <div class="footer__row">
+            <div class="footer__hide">
+            </div>
+            <div class="footer__top">
+              <div class="footer__top__content">
+                <p class="footer__text">Fooþjónustan</p>
+                <p class="footer__text">123-4567</p>
+              </div>
+            </div>
+            <div class="footer__top">
+              <div class="footer__top__content">
+                <p class="footer__text">Opið 12-13 alla daga</p>
+                <p class="footer__text">Bargata 1</p>
+                <p class="footer__text">900 Foobar</p>
+              </div>
+            </div>
+            <div class="footer__hide">
+            </div>
+          </div>
+          <br>
+          <div class="footer__down">
+            <div class="footer__bottom">
+              <div class="footer__bottom__content">
+                <p class="footer__bottom__text">© Fooþjónustan 2017</p>
+              </div>
+            </div>
+          </div>
         </div>
-        </form>
-     </main>
+      </footer>
+    </main>
   </body>
 </html>

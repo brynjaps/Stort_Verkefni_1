@@ -40,6 +40,30 @@
     @include columns(3);
   }
 
+  &-sm {
+    @media (max-width: 599px) {
+      &-12 {
+        @include columns(12);
+      }
+      &-6 {
+        @include columns(6);
+      }
+    }
+    @media (min-width: 1200px) {
+      &-4 {
+        @include columns(4);
+      }
+    }
+  }
+
+  &-sa {
+    @media (max-width: 600px) {
+      &-12 {
+        @include columns(12);
+      }
+    }
+  }
+
   &-600 {
     @media (max-width: 600px) {
       &-12 {

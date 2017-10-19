@@ -6,20 +6,28 @@
   opacity: 0.8;
   background: rgba(0, 0, 0, 0.9);
   position: fixed;
+  height: 45px;
 }
 .header__right {
   display: flex;
   flex-direction: row;
+  width: 50%;
+  justify-content: flex-end;
+  margin-right: 40px;
+  @media (min-width: 1200px) {
+    margin-right: 0;
+  }
 }
 .header__left {
-  width: 100%;
+  width: 50%;
   display: flex;
+  margin-top: 15px;
 }
 .header__text {
   color: white;
-  padding: 5px;
   align-self: center;
   text-decoration: none;
+  margin: 15px;
 }
 .button__header__text {
   color: white;
@@ -27,7 +35,7 @@
 }
 .button__header {
   background-color: #666;
-  padding: 10px;
+  padding: 10px 20px 10px 20px;
   margin: 5px;
   border: none;
   border-radius: 5px;
@@ -37,4 +45,65 @@
 }
 header {
   max-width: 1200px;
+  margin-top: -50px;
+  margin-bottom: 200px;
+  @media (max-width: 600px) {
+    margin-bottom: 80px;
+  }
+}
+.index__header {
+  display: flex;
+  width: 100%;
+  min-height: 750px;
+  padding: 2em;
+  margin-bottom: 2em;
+  flex-direction: column;
+  background: transparent url("bg.jpg") no-repeat fixed 50% 50%;
+  background-size: cover;
+  &__text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  &__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    animation: fadein 3s ease-in-out;
+  }
+  &__title {
+    margin-top: 220px;
+    font-size: 36px;
+    font-family: 'Roboto Slab', serif;
+    @media (max-width: 599px) {
+      font-size: 24px;
+    }
+    animation: fadein 1s ease-in-out;
+    }
+    @keyframes fadein {
+      from {opacity: 0; }
+      to   {opacity: 1; }
+    }
+  &__name {
+    font-size: 72px;
+    @media (max-width: 599px) {
+      font-size: 48px;
+    }
+    animation: fadein 2s ease-in-out;
+    font-family: 'Roboto Slab', serif;
+  }
+}
+.button__header__later {
+  background-color: #666;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 2px;
+  &__text {
+    color: white;
+    text-decoration: none;
+    font-size: 36px;
+  }
 }
