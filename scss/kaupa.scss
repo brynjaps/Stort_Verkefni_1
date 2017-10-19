@@ -60,23 +60,3 @@ input[type="radio"] {
   display: flex;
   margin: 60px 0px 60px;
 }
-
-.kaupa__header {
-  display: flex;
-  width: 100%;
-  min-height: 400px;
-  padding: 2em;
-  margin-bottom: 2em;
-  flex-direction: column;
-  background: transparent url("bg-subpage.jpg") no-repeat 50% 50%;
-  background-size: cover;
-  &__text {
-    margin-top: 100px;
-    margin-left: -30px;
-  }
-  &__title {
-    font-family: 'Roboto Slab', serif;
-    color: white;
-    font-size: 60px;
-  }
-}

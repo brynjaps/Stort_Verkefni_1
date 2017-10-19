@@ -290,14 +290,6 @@ header {
   .greidsla {
     margin-right: 90px; } }
 
-@media (min-width: 600px) {
-  main {
-    margin-top: 100px; } }
-
-@media (min-width: 400px) {
-  main {
-    margin-top: 50px; } }
-
 .kyn {
   vertical-align: middle; }
 
@@ -432,7 +424,6 @@ img {
   flex-direction: column;
   background: transparent url("bg-subpage.jpg") no-repeat 0% 0%;
   background-size: cover;
-  opacity: 0.8;
 }
 
 .um_foo__header__title {
